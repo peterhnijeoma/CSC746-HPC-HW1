@@ -31,7 +31,7 @@ int main (int argc, char *argv[])
     std::chrono::time_point<std::chrono::high_resolution_clock> start_time = std::chrono::high_resolution_clock::now();
 
     // sum from 1 to N (loop size) in a loop
-    for (size_t i = 0; i < loop_size; i++)
+    for (long i = 0; i < loop_size; i++)
     {
         sum_accm += i;
     }
