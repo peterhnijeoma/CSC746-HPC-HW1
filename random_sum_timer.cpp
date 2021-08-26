@@ -55,8 +55,9 @@ int main (int argc, char *argv[])
     std::chrono::time_point<std::chrono::high_resolution_clock> end_time = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> elapsed = end_time - start_time;
 
-    std::cout << " Elapsed time for summing " << array_size << " interger array elements is: " << elapsed.count() << " " << std::endl;
+    std::cout << " Elapsed time for summing " << arr_itn_size << " interger array elements is: " << elapsed.count() << " " << std::endl;
     
     return 1;
 }
+
 
