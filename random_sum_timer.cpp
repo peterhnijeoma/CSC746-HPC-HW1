@@ -32,7 +32,9 @@ int main (int argc, char *argv[])
     // delcare and initialize array elements.
     // the value of element i, is a random integer between 0 and arr_itn_size.
     std::cout << " declaring array of " << arr_itn_size << std::endl;    
-    long a_var[arr_itn_size];
+    // long a_var[arr_itn_size];
+    long *a_var;
+    a_var = new long[arr_itn_size];
 
     // random number generator
     std::default_random_engine gen;
@@ -50,7 +52,7 @@ int main (int argc, char *argv[])
     long arr_ind = 0;
     for (long i = 0; i < arr_itn_size; i++)
     {
-    std::cout << " accessing array value for index " << arr_ind << std::endl;        
+    std::cout << " random access of array value for index " << arr_ind << std::endl;        
         sum_accm += a_var[arr_ind];
         arr_ind = a_var[i];
     }
