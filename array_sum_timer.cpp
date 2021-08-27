@@ -27,9 +27,11 @@ int main (int argc, char *argv[])
         array_size = std::atol(argv[1]);
 
     // delcare and initialize array elements. the value of element i, is i.
+    std::cout << " declaring array of " << array_size << std::endl;
     long a_var[array_size];
     for (long i = 0; i < array_size; i++)
     {
+    std::cout << " assigning array value for index " << i << std::endl;
         a_var[i] = i;
     }
     
@@ -38,9 +40,10 @@ int main (int argc, char *argv[])
     // sum array elemnts in sequence
     for (long i = 0; i < array_size; i++)
     {
+    std::cout << " adding array value to sum for index " << i << std::endl;        
         sum_accm += a_var[i];
     }
-
+    std::cout << " done with summation " << std::endl;
     std::chrono::time_point<std::chrono::high_resolution_clock> end_time = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> elapsed = end_time - start_time;
 
