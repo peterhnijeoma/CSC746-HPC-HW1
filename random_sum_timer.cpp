@@ -42,13 +42,14 @@ int main (int argc, char *argv[])
 
     for (long i = 0; i < arr_itn_size; i++)
     {
-    //std::cout << " assigning array value for index " << i << std::endl;        
+    //std::cout << " assigning array value for index " << i << std::endl;
+        // assign a random number to i array element        
         a_var[i] = dist(gen);
     }
     
     std::chrono::time_point<std::chrono::high_resolution_clock> start_time = std::chrono::high_resolution_clock::now();
 
-    // sum array elemnts in sequence
+    // sum array elemnts at random starting at index 0
     long arr_ind = 0;
     for (long i = 0; i < arr_itn_size; i++)
     {
@@ -57,12 +58,16 @@ int main (int argc, char *argv[])
         arr_ind = a_var[i];
     }
     //std::cout << " done with sum " << std::endl;
+
+    // release allocated memory
+    delete [] a_var;
+
     std::chrono::time_point<std::chrono::high_resolution_clock> end_time = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> elapsed = end_time - start_time;
 
-    std::cout << " Elapsed time for summing " << arr_itn_size << " interger array elements is: " << elapsed.count() << " " << std::endl;
+    std::cout << " Elapsed time for summing " << arr_itn_size << " interger array elements at random is: " << elapsed.count() << " " << std::endl;
     
-    return 1;
+    return 0;
 }
 
 
