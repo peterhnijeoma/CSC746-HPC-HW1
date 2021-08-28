@@ -1,6 +1,6 @@
 #! 
 
-echo "no memory access run\n"
+echo; echo "no memory access run"
 # run simple summation - default problem size
 ./simple_sum_timer
 
@@ -17,7 +17,7 @@ echo "no memory access run\n"
 ./simple_sum_timer 100000000
 ./simple_sum_timer 500000000
 
-echo "sequential memory access run\n"
+echo; echo "sequential memory access run\n"
 # run array summation (sequential memory access) - default problem size
 ./array_sum_timer
 
@@ -33,7 +33,7 @@ echo "sequential memory access run\n"
 ./array_sum_timer 100000000
 ./array_sum_timer 500000000
 
-echo "random memory access run\n"
+echo; echo "random memory access run\n"
 # run array summation (random memory access) - default problem size
 ./random_sum_timer
 

@@ -48,7 +48,7 @@ int main (int argc, char *argv[])
     }
     //std::cout << " done with summation " << std::endl;
 
-    // release assigned memory
+    // release allocated memory
     delete [] a_var;
 
     std::chrono::time_point<std::chrono::high_resolution_clock> end_time = std::chrono::high_resolution_clock::now();

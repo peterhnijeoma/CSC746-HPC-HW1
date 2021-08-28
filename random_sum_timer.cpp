@@ -43,7 +43,8 @@ int main (int argc, char *argv[])
     for (long i = 0; i < arr_itn_size; i++)
     {
     //std::cout << " assigning array value for index " << i << std::endl;
-        // assign a random number to i array element        
+        // assign a random number between 0 and arr_itn_size to i array element
+        // duplicates may occur
         a_var[i] = dist(gen);
     }
     
