@@ -60,14 +60,14 @@ int main (int argc, char *argv[])
     }
     //std::cout << " done with sum " << std::endl;
 
-    // release allocated memory
-    delete [] a_var;
-
     std::chrono::time_point<std::chrono::high_resolution_clock> end_time = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> elapsed = end_time - start_time;
 
     std::cout << " Elapsed time for summing " << arr_itn_size << " interger array elements at random is: " << elapsed.count() << " " << std::endl;
-    
+
+    // release allocated memory
+    delete [] a_var;
+        
     return 0;
 }
 

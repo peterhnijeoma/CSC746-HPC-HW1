@@ -48,3 +48,5 @@ echo; echo "random memory access run\n"
 ./random_sum_timer 50000000
 ./random_sum_timer 100000000
 ./random_sum_timer 500000000
+
+exit
