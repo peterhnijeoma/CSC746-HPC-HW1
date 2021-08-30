@@ -42,6 +42,6 @@ int main (int argc, char *argv[])
 
     std::cout << " Elapsed time for summing " << loop_size << " interger numbers is: " << elapsed.count() << " " << std::endl;
     
-    return 1;
+    return 0;
 }
 
