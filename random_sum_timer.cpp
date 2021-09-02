@@ -56,7 +56,7 @@ int main (int argc, char *argv[])
     {
     //std::cout << " random access of array value for index " << arr_ind << std::endl;        
         sum_accm += a_var[arr_ind];
-        arr_ind = a_var[i];
+        arr_ind = a_var[i]; // next index to access
     }
     //std::cout << " done with sum " << std::endl;
 
